@@ -2,6 +2,8 @@
 
 Turn a fresh Ubuntu installation into a fully-configured, beautiful, and modern web development system by running a single command. No need to write bespoke configs for every essential tool just to get started or to be up on all the latest command-line tools. Omakupt is an opinionated take on what Linux can be at its best.
 
+> **Note:** This is a personal project, tailored primarily to my own setup and workflow. It's public and you're welcome to use or fork it, but it isn't maintained as a general-purpose product — choices here (default apps, dock, themes) reflect my own preferences rather than a one-size-fits-all default.
+
 ## Install
 
 On a fresh Ubuntu 24.04+ machine:
