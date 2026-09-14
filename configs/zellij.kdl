@@ -1,6 +1,8 @@
 theme "tokyo-night"
 default_layout "compact"
 on_force_close "quit"
+pane_frames true
+pane_frame_style "full"
 
 default_mode "locked"
 keybinds clear-defaults=true {
