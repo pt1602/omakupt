@@ -1,0 +1,15 @@
+themes {
+    vantablack {
+        fg "#ffffff"
+        bg "#000000"
+        black "#1a1a1a"
+        red "#a4a4a4"
+        green "#b6b6b6"
+        yellow "#cecece"
+        blue "#8d8d8d"
+        magenta "#9b9b9b"
+        cyan "#b0b0b0"
+        white "#ffffff"
+        orange "#b9b9b9"
+    }
+}

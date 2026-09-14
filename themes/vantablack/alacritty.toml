@@ -1,0 +1,47 @@
+[colors]
+[colors.primary]
+background = "#000000"
+foreground = "#ffffff"
+dim_foreground = "#b2b2b2"
+
+[colors.cursor]
+text = "#000000"
+cursor = "#ffffff"
+
+[colors.vi_mode_cursor]
+text = "#000000"
+cursor = "#ffffff"
+
+[colors.selection]
+text = "CellForeground"
+background = "#7a7a7a"
+
+[colors.normal]
+black = "#1a1a1a"
+red = "#a4a4a4"
+green = "#b6b6b6"
+yellow = "#cecece"
+blue = "#8d8d8d"
+magenta = "#9b9b9b"
+cyan = "#b0b0b0"
+white = "#ffffff"
+
+[colors.bright]
+black = "#7a7a7a"
+red = "#a4a4a4"
+green = "#b6b6b6"
+yellow = "#cecece"
+blue = "#8d8d8d"
+magenta = "#9b9b9b"
+cyan = "#b0b0b0"
+white = "#ffffff"
+
+[colors.dim]
+black = "#121212"
+red = "#737373"
+green = "#7f7f7f"
+yellow = "#909090"
+blue = "#636363"
+magenta = "#6c6c6c"
+cyan = "#7b7b7b"
+white = "#b2b2b2"

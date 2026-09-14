@@ -1,0 +1,15 @@
+themes {
+    catppuccin-latte {
+        fg "#4c4f69"
+        bg "#eff1f5"
+        black "#4c4f69"
+        red "#d20f39"
+        green "#40a02b"
+        yellow "#df8e1d"
+        blue "#1e66f5"
+        magenta "#ea76cb"
+        cyan "#179299"
+        white "#dce0e8"
+        orange "#d84e2b"
+    }
+}
