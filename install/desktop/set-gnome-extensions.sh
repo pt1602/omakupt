@@ -2,7 +2,7 @@
 
 source "${OMAKUPT_PATH:-$HOME/.local/share/omakupt}/install/lib/compat.sh"
 
-sudo apt install -y gnome-shell-extension-manager gir1.2-gtop-2.0 gir1.2-clutter-1.0
+sudo apt install -y gnome-shell-extension-manager gir1.2-gtop-2.0 gir1.2-clutter-1.0 gnome-weather
 pipx install gnome-extensions-cli --system-site-packages
 
 # Turn off default Ubuntu extensions. A release can rename or drop one of these, so
@@ -25,6 +25,11 @@ gext install space-bar@luchrioh
 gext install undecorate@sun.wxg@gmail.com
 gext install tophat@fflewddur.github.io
 gext install AlphabeticalAppGrid@stuarthayhurst
+gext install windowIsReady_Remover@nunofarruca@gmail.com
+# Not needed (and not published) on Gnome 50+, which sets the week start day natively
+gext install weeks-start-on-monday@extensions.gnome-shell.fifi.org
+# Needs the gnome-weather app (installed above) to have a location/forecast to show
+gext install weatheroclock@CleoMenezesJr.github.io
 
 # Compile gsettings schemas in order to be able to set them. Only copy a schema that
 # gext actually installed, so an extension with no build for this Gnome Shell version
@@ -46,6 +51,8 @@ copy_extension_schema "blur-my-shell@aunetx" "org.gnome.shell.extensions.blur-my
 copy_extension_schema "space-bar@luchrioh" "org.gnome.shell.extensions.space-bar.gschema.xml"
 copy_extension_schema "tophat@fflewddur.github.io" "org.gnome.shell.extensions.tophat.gschema.xml"
 copy_extension_schema "AlphabeticalAppGrid@stuarthayhurst" "org.gnome.shell.extensions.AlphabeticalAppGrid.gschema.xml"
+copy_extension_schema "weeks-start-on-monday@extensions.gnome-shell.fifi.org" "org.gnome.shell.extensions.weeks-start-on-monday.gschema.xml"
+copy_extension_schema "weatheroclock@CleoMenezesJr.github.io" "org.gnome.shell.extensions.weather-oclock.gschema.xml"
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 # Configure Tactile
