@@ -1,0 +1,4 @@
+#!/bin/bash
+
+source $OMAKUPT_PATH/bin/omakupt-sub/header.sh
+source $OMAKUPT_PATH/bin/omakupt-sub/menu.sh
