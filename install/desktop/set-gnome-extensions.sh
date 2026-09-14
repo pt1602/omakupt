@@ -90,13 +90,13 @@ gsettings_set_if_available org.gnome.shell.extensions.space-bar.shortcuts enable
 gsettings_set_if_available org.gnome.shell.extensions.space-bar.shortcuts enable-move-to-workspace-shortcuts true
 gsettings_set_if_available org.gnome.shell.extensions.space-bar.shortcuts open-menu "@as []"
 
-# Configure TopHat
+# Configure TopHat: CPU and memory only, no network/disk/filesystem meters
 gsettings_set_if_available org.gnome.shell.extensions.tophat show-icons false
-gsettings_set_if_available org.gnome.shell.extensions.tophat show-cpu false
+gsettings_set_if_available org.gnome.shell.extensions.tophat show-cpu true
+gsettings_set_if_available org.gnome.shell.extensions.tophat show-mem true
+gsettings_set_if_available org.gnome.shell.extensions.tophat show-net false
 gsettings_set_if_available org.gnome.shell.extensions.tophat show-disk false
-gsettings_set_if_available org.gnome.shell.extensions.tophat show-mem false
 gsettings_set_if_available org.gnome.shell.extensions.tophat show-fs false
-gsettings_set_if_available org.gnome.shell.extensions.tophat network-usage-unit bits
 
 # Configure AlphabeticalAppGrid
 gsettings_set_if_available org.gnome.shell.extensions.alphabetical-app-grid folder-order-position 'end'
