@@ -1,15 +1,120 @@
 themes {
     ristretto {
-        fg "#e6d9db"
-        bg "#2c2525"
-        red "#fd6883"
-        green "#adda78"
-        yellow "#f9cc6c"
-        blue "#f38d70"
-        orange "#FFA066"
-        magenta "#a8a9eb"
-        cyan "#85dacc"
-        black "#2c2525"
-        white "#e6d9db"
+        text_unselected {
+            base 230 217 219
+            background 44 37 37
+            emphasis_0 255 160 102
+            emphasis_1 133 218 204
+            emphasis_2 173 218 120
+            emphasis_3 168 169 235
+        }
+        text_selected {
+            base 230 217 219
+            background 44 37 37
+            emphasis_0 255 160 102
+            emphasis_1 133 218 204
+            emphasis_2 173 218 120
+            emphasis_3 168 169 235
+        }
+        ribbon_selected {
+            base 44 37 37
+            background 173 218 120
+            emphasis_0 253 104 131
+            emphasis_1 255 160 102
+            emphasis_2 168 169 235
+            emphasis_3 243 141 112
+        }
+        ribbon_unselected {
+            base 44 37 37
+            background 230 217 219
+            emphasis_0 253 104 131
+            emphasis_1 230 217 219
+            emphasis_2 243 141 112
+            emphasis_3 168 169 235
+        }
+        table_title {
+            base 173 218 120
+            background 0
+            emphasis_0 255 160 102
+            emphasis_1 133 218 204
+            emphasis_2 173 218 120
+            emphasis_3 168 169 235
+        }
+        table_cell_selected {
+            base 230 217 219
+            background 44 37 37
+            emphasis_0 255 160 102
+            emphasis_1 133 218 204
+            emphasis_2 173 218 120
+            emphasis_3 168 169 235
+        }
+        table_cell_unselected {
+            base 230 217 219
+            background 44 37 37
+            emphasis_0 255 160 102
+            emphasis_1 133 218 204
+            emphasis_2 173 218 120
+            emphasis_3 168 169 235
+        }
+        list_selected {
+            base 230 217 219
+            background 44 37 37
+            emphasis_0 255 160 102
+            emphasis_1 133 218 204
+            emphasis_2 173 218 120
+            emphasis_3 168 169 235
+        }
+        list_unselected {
+            base 230 217 219
+            background 44 37 37
+            emphasis_0 255 160 102
+            emphasis_1 133 218 204
+            emphasis_2 173 218 120
+            emphasis_3 168 169 235
+        }
+        frame_selected {
+            base 173 218 120
+            background 0
+            emphasis_0 255 160 102
+            emphasis_1 133 218 204
+            emphasis_2 168 169 235
+            emphasis_3 0
+        }
+        frame_highlight {
+            base 255 160 102
+            background 0
+            emphasis_0 168 169 235
+            emphasis_1 255 160 102
+            emphasis_2 255 160 102
+            emphasis_3 255 160 102
+        }
+        exit_code_success {
+            base 173 218 120
+            background 0
+            emphasis_0 133 218 204
+            emphasis_1 44 37 37
+            emphasis_2 168 169 235
+            emphasis_3 243 141 112
+        }
+        exit_code_error {
+            base 253 104 131
+            background 0
+            emphasis_0 249 204 108
+            emphasis_1 0
+            emphasis_2 0
+            emphasis_3 0
+        }
+        multiplayer_user_colors {
+            player_1 168 169 235
+            player_2 243 141 112
+            player_3 0
+            player_4 249 204 108
+            player_5 133 218 204
+            player_6 0
+            player_7 253 104 131
+            player_8 0
+            player_9 0
+            player_10 0
+        }
     }
 }
