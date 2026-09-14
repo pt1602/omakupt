@@ -90,8 +90,8 @@ gsettings_set_if_available org.gnome.shell.extensions.space-bar.shortcuts enable
 gsettings_set_if_available org.gnome.shell.extensions.space-bar.shortcuts enable-move-to-workspace-shortcuts true
 gsettings_set_if_available org.gnome.shell.extensions.space-bar.shortcuts open-menu "@as []"
 
-# Configure TopHat: CPU and memory only, shown as numeric percentages, no
-# network/disk/filesystem meters
+# Configure TopHat: CPU as a numeric percentage, memory as an absolute value
+# (e.g. "8.5g"), no network/disk/filesystem meters
 gsettings_set_if_available org.gnome.shell.extensions.tophat show-icons false
 gsettings_set_if_available org.gnome.shell.extensions.tophat show-cpu true
 gsettings_set_if_available org.gnome.shell.extensions.tophat show-mem true
@@ -100,7 +100,7 @@ gsettings_set_if_available org.gnome.shell.extensions.tophat show-disk false
 gsettings_set_if_available org.gnome.shell.extensions.tophat show-fs false
 gsettings_set_if_available org.gnome.shell.extensions.tophat cpu-display numeric
 gsettings_set_if_available org.gnome.shell.extensions.tophat mem-display numeric
-gsettings_set_if_available org.gnome.shell.extensions.tophat mem-abs-units false
+gsettings_set_if_available org.gnome.shell.extensions.tophat mem-abs-units true
 
 # Configure AlphabeticalAppGrid
 gsettings_set_if_available org.gnome.shell.extensions.alphabetical-app-grid folder-order-position 'end'
