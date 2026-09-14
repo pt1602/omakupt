@@ -24,7 +24,14 @@ See [docs/installation.md](docs/installation.md) for requirements and options.
 
 - [Installation](docs/installation.md)
 - [Using the `omakupt` command](docs/usage.md)
+- [Themes and fonts](docs/themes.md)
+- [Terminal, shell, and editor](docs/terminal.md)
+- [GNOME extensions](docs/gnome-extensions.md)
 - [Updating](docs/updating.md)
+
+### Further reading
+
+Omakupt is a fork of Omakub, so a lot of its concepts (tiling, hotkeys, terminal tools) carry over. DHH's original [Omakub Manual](https://learn.omacom.io/1/read) is a much more thorough walkthrough of that shared foundation — worth a read, though it describes upstream Omakub/Omarchy rather than this fork specifically, and isn't something we redistribute or copy from here.
 
 ## Extras
 
