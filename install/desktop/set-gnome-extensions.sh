@@ -30,6 +30,7 @@ gext install windowIsReady_Remover@nunofarruca@gmail.com
 gext install weeks-start-on-monday@extensions.gnome-shell.fifi.org
 # Needs the gnome-weather app (installed above) to have a location/forecast to show
 gext install weatheroclock@CleoMenezesJr.github.io
+gext install notification-position@drugo.dev
 
 # Compile gsettings schemas in order to be able to set them. Only copy a schema that
 # gext actually installed, so an extension with no build for this Gnome Shell version
@@ -53,7 +54,12 @@ copy_extension_schema "tophat@fflewddur.github.io" "org.gnome.shell.extensions.t
 copy_extension_schema "AlphabeticalAppGrid@stuarthayhurst" "org.gnome.shell.extensions.AlphabeticalAppGrid.gschema.xml"
 copy_extension_schema "weeks-start-on-monday@extensions.gnome-shell.fifi.org" "org.gnome.shell.extensions.weeks-start-on-monday.gschema.xml"
 copy_extension_schema "weatheroclock@CleoMenezesJr.github.io" "org.gnome.shell.extensions.weather-oclock.gschema.xml"
+copy_extension_schema "notification-position@drugo.dev" "org.gnome.shell.extensions.notification-position.gschema.xml"
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
+
+# gext install doesn't enable an extension on a genuinely fresh install (only on a
+# repeat run against one already installed), so enable this one explicitly.
+gnome-extensions enable notification-position@drugo.dev 2>/dev/null || omakupt_note "could not enable notification-position@drugo.dev"
 
 # Configure Tactile
 gsettings_set_if_available org.gnome.shell.extensions.tactile col-0 1

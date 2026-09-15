@@ -14,6 +14,7 @@
 | [Window Is Ready – Notification Remover](https://extensions.gnome.org/extension/1007/window-is-ready-notification-remover/) | Silences the "Window is ready" notification some apps trigger on launch. |
 | [Weeks Start on Monday Again](https://extensions.gnome.org/extension/1720/weeks-start-on-monday-again/) | Makes the calendar/clock week start on Monday. Not needed (and not published) on GNOME 50+, which supports this natively — skipped there automatically. |
 | [Weather O'Clock](https://extensions.gnome.org/extension/5470/weather-oclock/) | Shows current weather in the panel next to the clock. Needs the GNOME Weather app (installed alongside it) to have a saved location — open Weather once and add your city. |
+| [Notification Banner Position](https://extensions.gnome.org/extension/4105/notification-banner-position/) | Lets you move where notification banners pop up, via a quick menu in the top panel. |
 
 All of these get installed via `gnome-extensions-cli` (`gext`) and explicitly enabled afterward, so a fresh install doesn't leave one merely downloaded-but-inactive. An extension with no build for the running GNOME Shell version is skipped with a note rather than aborting the rest of the setup.
 
