@@ -39,9 +39,13 @@ Moves an app's `.desktop` entry into (or out of) one of the GNOME activities-ove
 - `Super+W` — close window
 - `Super+Up` — maximize
 - `Super+1..6` — switch workspace (6 fixed workspaces, not dynamic)
+- `Ctrl+Super+1..6` — move the focused window to that workspace
 - `Alt+1..9` — switch to app pinned in that dock position
 - `Super+Space` — toggle Ulauncher
 - `Ctrl+PrintScreen` — Flameshot screenshot
-- `Shift+Alt+1` / `Shift+Alt+2` — open a new Chrome / Alacritty window (instead of focusing an existing one)
+- `Ctrl+Alt+1` / `Ctrl+Alt+2` — open a new Chrome / Alacritty window (instead of focusing an existing one)
+- `Ctrl+Alt+3` — start PhpStorm, independent of its position in the dock
+
+These all use `Ctrl` rather than `Shift` as the extra modifier on digit keys, since `Shift+<digit>` sends a different character on many keyboard layouts (e.g. `Shift+3` is `§` on German keyboards) and so wouldn't be triggerable at all there. `Ctrl` doesn't change what a digit key sends on any layout.
 
 See the script for the full list, including the optional Apple Studio/XDR display brightness keys (require ASDControl).
