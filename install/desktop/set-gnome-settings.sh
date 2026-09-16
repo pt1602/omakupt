@@ -11,3 +11,6 @@ gsettings set org.gnome.desktop.calendar show-weekdate true
 
 # Turn off ambient sensors for setting screen brightness (they rarely work well!)
 gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled false
+
+# Show the battery percentage in the top bar, not just the icon
+gsettings set org.gnome.desktop.interface show-battery-percentage true
