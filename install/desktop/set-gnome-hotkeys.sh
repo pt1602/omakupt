@@ -53,6 +53,19 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 "['<Control><
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-5 "['<Control><Super>5']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-6 "['<Control><Super>6']"
 
+# Gnome's own default for "open a new window of the Nth pinned app" is also
+# Ctrl+Super+<digit>, which collides with move-to-workspace above and wins over it.
+# Clear it so Ctrl+Super+<digit> unambiguously moves the window.
+gsettings set org.gnome.shell.keybindings open-new-window-application-1 "[]"
+gsettings set org.gnome.shell.keybindings open-new-window-application-2 "[]"
+gsettings set org.gnome.shell.keybindings open-new-window-application-3 "[]"
+gsettings set org.gnome.shell.keybindings open-new-window-application-4 "[]"
+gsettings set org.gnome.shell.keybindings open-new-window-application-5 "[]"
+gsettings set org.gnome.shell.keybindings open-new-window-application-6 "[]"
+gsettings set org.gnome.shell.keybindings open-new-window-application-7 "[]"
+gsettings set org.gnome.shell.keybindings open-new-window-application-8 "[]"
+gsettings set org.gnome.shell.keybindings open-new-window-application-9 "[]"
+
 # Reserve slots for custom keybindings
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/']"
 

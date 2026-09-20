@@ -93,7 +93,12 @@ gsettings_set_if_available org.gnome.shell.extensions.blur-my-shell.dash-to-dock
 # Configure Space Bar
 gsettings_set_if_available org.gnome.shell.extensions.space-bar.behavior smart-workspace-names false
 gsettings_set_if_available org.gnome.shell.extensions.space-bar.shortcuts enable-activate-workspace-shortcuts false
-gsettings_set_if_available org.gnome.shell.extensions.space-bar.shortcuts enable-move-to-workspace-shortcuts true
+# Space Bar's own move-to-workspace shortcuts hardcode Shift+Super+<digit> and
+# actively overwrite org.gnome.desktop.wm.keybindings move-to-workspace-N with that
+# whenever this is enabled - which fights our Ctrl+Super+<digit> binding above (set
+# specifically to avoid the layout issues Shift+<digit> has). Keep this off; our own
+# move-to-workspace-N bindings already cover it.
+gsettings_set_if_available org.gnome.shell.extensions.space-bar.shortcuts enable-move-to-workspace-shortcuts false
 gsettings_set_if_available org.gnome.shell.extensions.space-bar.shortcuts open-menu "@as []"
 
 # Configure TopHat: CPU as a numeric percentage, memory as an absolute value
